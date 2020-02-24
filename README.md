@@ -1,5 +1,5 @@
 <p align="left">
-<img width="212" height="166"  src="https://github.com/pskelsey/4C/blob/gh-pages/4CLogo.png">
+<img width="212" height="166"  src="https://github.com/pskelsey/4C-model-lite/blob/gh-pages/4CLogo.png">
 </p>
    
 # _4C-Lite model_: Crop Connectivity under Climate Change
