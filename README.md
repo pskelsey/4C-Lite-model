@@ -22,7 +22,7 @@ Once your model is defined in the Model Tab, you can move on to the Projections 
 <p>
 </p>
 <p align="left">
-  <img src="https://github.com/pskelsey/4C/blob/gh-pages/projectionsTabLarge.png">
+  <img src="https://github.com/pskelsey/4C-model-lite/blob/gh-pages/projectionsScreenshot.PNG">
 </p>
 
 ## Motivation
