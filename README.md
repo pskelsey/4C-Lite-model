@@ -1,4 +1,8 @@
-# _crop_risk_ model
+<p align="left">
+<img width="212" height="166"  src="https://github.com/pskelsey/4C/blob/gh-pages/4CLogo.png">
+</p>
+   
+# _4C-Lite model_: Crop Connectivity under Climate Change
 
 ## Basic overview
 A desktop app for performing climate change risk assessments in real crop locations in Great Britain. 
