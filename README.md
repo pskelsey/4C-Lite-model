@@ -6,14 +6,14 @@
 
 ## Basic overview
 A desktop app for performing climate change risk assessments in real crop locations in Great Britain. 
-* Build your own risk model in a few easy clicks.
-* Choose a raster distribution of crop species / land use locations to apply your model in, or generate your own landscape.
-* Select a climate variable, a future time-period and month, and pick your greenhouse gas emissions scenario.
+* Build your own risk model from your own data in a few easy clicks.
+* Choose a raster distribution of crops to apply your model in.
+* Select your climate variables and greenhouse gas emissions scenario.
 * Define the level of connectivity among grid cell locations, if desired.
 * Hit the run button, visualise your results, and save them to create your own graphics. 
 
 ## Example
-A risk function is selected from the drop-down list and fit to user-defined data for the proportion of plants infected as a function of temperature. If you have no data you can still select a model from the drop-down list and manually adjust the parameter values to suit, or define your own function in the box provided. 
+A risk function is selected from the drop-down list and fit to user-defined data for the proportion of plants infected as a function of temperature and hours of high humidity. 
 
 <p align="left">
   <img src="https://github.com/pskelsey/4C-model-lite/blob/gh-pages/makeModelScreenShot.png">
