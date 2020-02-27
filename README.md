@@ -16,7 +16,7 @@ A desktop app for performing climate change risk assessments in real crop locati
 A risk function is selected from the drop-down list and fit to user-defined data for the proportion of plants infected as a function of temperature and relative humidity. 
 
 <p align="left">
-  <img src="https://github.com/pskelsey/4C-model-lite/blob/gh-pages/makeModelScreenShot.png">
+  <img src="https://github.com/pskelsey/4C-model-lite/blob/gh-pages/riskModelScreenShot.png">
 </p>
 Once the model is defined in the Model Tab, you can move on to the Projections Tab. Temperature and humidity are selected as the variables of interest, for summer in the 2060s, and barley crops are selected from the list of available crop species. That selection is narrowed further to locations in the east of Scotland (map shown). In order to adjust projected values from the model according to the connectivity of the crops (e.g. for pest dispersal), dispersal is switched on and the mean dispersal distance is set to 2 (12 km) grid cells. The three boxplots show the distribution of projected model values for the three types of dispersal kernel. Results are presented as the percentage increase in risk compared to the current (baseline) climate. 
 <p>
