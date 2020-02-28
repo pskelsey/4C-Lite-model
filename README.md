@@ -33,7 +33,7 @@ NOTE: Due to the many controls and features of the app, the GUI is a fixed size 
 To make sure you get the latest release, click on the 'release' button near the top of the page:
 
 <p align="left">
-  <img src="https://github.com/pskelsey/4C/blob/gh-pages/download.PNG">
+  <img src="https://github.com/pskelsey/4C-Lite-model/blob/gh-pages/releaseScreenshot.png">
 </p>
 
 Then click on the executable file at the top of the Assets list - _cropConnectivityUnderClimateChange-Lite.exe_. This will download a web-based installer to your computer, so you will need an internet connection to install the app. When you run the installer, it will download MATLAB Runtime to your computer (if required). MATLAB Runtime is a royalty-free standalone set of shared libraries that enables the execution of compiled MATLAB applications on computers that do not have MATLAB installed. If you have an up-to-date version of MATLAB (see [prerequisites](https://github.com/pskelsey/4C-Lite-model/blob/master/prerequisites.txt)) then this step will be skipped. MATLAB Runtime requires approximately 750MB of disk space so it may take some time to install. Once installation of Runtime is complete the app will load quickly using the shortcuts provided. When the app is loading a splash screen will appear then disappear, and there will be a short interval before the app loads; there is no need to try and load it again, just be patient.
