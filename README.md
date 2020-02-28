@@ -18,7 +18,7 @@ A surface polynomial risk function is selected and fit to data uploaded by the u
 <p align="left">
   <img src="https://github.com/pskelsey/4C-model-lite/blob/gh-pages/riskModelScreenshot.PNG">
 </p>
-Now that the model has been fitted, the risk assessment can proceed in the Climate Tab. Temperature and humidity are selected as the variables of interest, for summer in the 2060s, and barley crops are selected from the list of available crop species. That selection is narrowed further to locations in the north of Scotland (map shown). In order to adjust projected values from the model according to the connectivity of the crops (e.g. for pest dispersal), dispersal is switched on and the mean dispersal distance is set to 1 grid cell (12 km). The three boxplots show the distribution of projected model values for the three types of dispersal kernel. Results are presented as the percentage increase in risk compared to the current (baseline) climate. 
+Now that the model has been fitted, the risk assessment can proceed in the Climate Tab. Temperature and humidity are selected as the variables of interest, for summer in the 2060s, and barley crops are selected from the list of available crop species. That selection is narrowed further to locations in the north of Scotland (map shown). In order to adjust projected values from the model according to the connectivity of the crops (e.g. for pest/pathogen dispersal), dispersal is switched on and the mean dispersal distance is set to 1 grid cell (12 km). The three boxplots show the distribution of projected model values for the three types of dispersal kernel. Results are presented as the percentage increase in risk compared to the current (baseline) climate. 
 <p>
 </p>
 <p align="left">
