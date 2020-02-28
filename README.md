@@ -13,7 +13,7 @@ A desktop app for performing climate change risk assessments in real crop locati
 * Hit the run button, visualise your results, and save them to create your own graphics. 
 
 ## Example
-A surface polynomial risk function is selected and fit to data uploaded by the user for the proportion of plants infected as a function of temperature and relative humidity. 
+A surface polynomial risk function is selected and fit to data uploaded by the user for the proportion of plants infected as a function of temperature and relative humidity. The results of the fit are saved to the user's specified directory.
 
 <p align="left">
   <img src="https://github.com/pskelsey/4C-model-lite/blob/gh-pages/riskModelScreenshot.PNG">
