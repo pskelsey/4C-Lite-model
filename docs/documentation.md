@@ -66,7 +66,7 @@ Click the 'save' button to open up a file save dialog box, where you can name yo
 
 # Climate Tab
 <p align="left">
-  <img src="https://github.com/pskelsey/4C-model/blob/gh-pages/projectionsTabLarge.png">
+  <img src="https://github.com/pskelsey/4C-model-lite/blob/gh-pages/projectionsScreenshot.PNG">
 </p>
 
 ## Climate and crop panel
