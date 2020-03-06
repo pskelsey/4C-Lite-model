@@ -14,6 +14,7 @@
   * [Upload your data](#upload-your-data)
   * [Fit a model](#fit-a-model)
   * [Adjust the plot](#adjust-the-plot)
+  * [Save your fit results](#save-your-fit-results)
 * [Climate tab](#climate-tab)
   * [Climate and crop panel](#climate-and-crop-panel)
   * [Dispersal panel](#dispersal-panel)
@@ -60,6 +61,9 @@ Use the 'Type of fit' switch to select a polynomial or spline fit. To fit a poly
 ### Adjust the plot
 Use the 'x-range', 'y-range' and 'z-range' numeric fields to visualise or extrapolate your model across a different range of values on a particular axis. The format required is min:max, e.g. to plot from 0 to 10 you would enter 0:10. Then hit Return on your keyboard or click your mouse outside of the numeric field. Note that this is for visualisation purposes only and does not affect model fit.
 
+### Save your fit results
+Click the 'save' button to open up a file save dialog box, where you can name your results file and save to any location. Note that for the poly option, details of the fit (formula, coefficients etc.) and the GoF statistics will be saved, but for spline only the GoF statistics will be saved, as this is considered a non-parametric fit.
+
 # Climate Tab
 <p align="left">
   <img src="https://github.com/pskelsey/4C-model/blob/gh-pages/projectionsTabLarge.png">
@@ -75,10 +79,7 @@ The features in this panel are used to define spatial relationships among grid c
 To change the dispersal function use the 'Kernel' knob:  fat = fat-tailed (square-root negative exponential kernel), thin = thin-tailed (negative exponential kernel), Gauss = Gaussian kernel. These three kernels are all derived from the exponential-power distribution and all have a different shape (see [Skelsey et al. 2013](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0075892) for a thorough explanation). Fat-tailed kernels are often used for processes that operate at broad spatial scales, such as long-distance dispersal by wind, whereas thin-tailed kernels are often used for processes that operate at fine spatial scales, such as splash- or insect-dispersal. The kernel is parameterized using the 'mdd' numeric field = mean dispersal distance. Enter a number for the average distance that a mobile agent can disperse - this is in units of 12 km grid cells, therefore entering 1 will give an mdd of 12 km, 2 gives an mdd of 24 km etc. 1D slice through your dispersal kernel (i.e. a dispersal gradient) is automatically displayed in the 'Dispersal gradient' plot pane. The connectivity of the landscape is automatically computed and displayed in the 'connectivity' field. All projected values from your risk model will be multiplied by this value. 
 
 ### Set to no dispersal
-If you do not want to incorporate spatial relationships among cells, set mdd = 0. A Dispersal is incorporated as a weighting factor, ranging from 0 to 1, that describes the degree of connectivity of each cell to all other cells - set 'Dispersal' to 'Conn.' In this case the dispersal kernel is normalized to a maximum value of unity. An example would be a risk model that projects the likelihood of pest occurrence (on a scale of 0 to 1), which is then weighted according to the connectivity of host cells (on a scale of 0 to 1) to provide projections of the risk of pest occurrence and spread (on a scale of 0 to 1). 
-
-### Create the dispersal function
-To change the dispersal function use the 'Kernel' knob:  fat = fat-tailed (square-root negative exponential kernel), thin = thin-tailed (negative exponential kernel), Gauss = Gaussian kernel. These three kernels are all derived from the exponential-power distribution and all have a different shape (see [Skelsey et al. 2013](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0075892) for a thorough explanation). Fat-tailed kernels are often used for processes that operate at broad spatial scales, such as long-distance dispersal by wind, whereas thin-tailed kernels are often used for processes that operate at fine spatial scales, such as splash dispersal. The kernel is parameterized using the 'mdd' numeric field = mean dispersal distance. Enter a number for the average distance that an individual can disperse. A 1D slice through your dispersal kernel (i.e. a dispersal gradient) is automatically displayed in the 'Dispersal gradient' plot pane.
+If you do not want to incorporate spatial relationships among cells, set mdd = 0. Then the 'connectivity' field will display 'NA' (not applicable). This is the default setting when you open the app. 
 
 ## Plots panel
 
