@@ -13,14 +13,9 @@
 * [Model Tab](#model-tab)
   * [Upload your data](#upload-your-data)
   * [Fit a model](#fit-a-model)
-  * [Plot a model](#plot-a-model)
-  * [Final model selection](#final-model-selection)
-* [Projections tab](#projections-tab)
-  * [Emissions panel](#emissions-panel)
-  * [Landscapes panel](#landscapes-panel)
-    * [How to incorporate cell areas](#how-to-incorporate-cell-areas)
-    * [Select a distribution of locations](#select-a-distribution-of-locations)
-    * [Artificial landscape generation](#artificial-landscape-generation)
+  * [Adjust the plot](#adjust-the-plot)
+* [Climate tab](#climate-tab)
+  * [Climate and crop panel](#climate-and-crop-panel)
   * [Dispersal panel](#dispersal-panel)
     * [Choose the type of dispersal](#choose-the-type-of-dispersal)
     * [Create the dispersal function](#create-the-dispersal-function)
@@ -50,7 +45,7 @@ Polygon data defining the spatial coverage of crops and land-use types were deri
 Note: Selection of certain options will result in others becoming 'greyed out' and unavailable to edit. This is normal and is there to ensure conflicting choices are not made.
 
 # Model Tab
-The risk models you create here can be a function of one- or two-weather variables, g = f(x,y); e.g. yield production as a function of temperature, infection risk as a function of temperature and humidity, etc.  
+The risk models you create here can be a function of one- or two-weather variables, g = f(x,y); e.g. yield production as a function of temperature, infection risk as a function of temperature and humidity, etc. Note that if you do not create a model here, you will not be able to produce any climate change projections.
 
 <p align="left">
   <img src="https://github.com/pskelsey/4C-model-lite/blob/gh-pages/riskModelScreenshot.PNG">
@@ -62,40 +57,16 @@ Use the 'No. of variables' switch to select a model that is a function of one- o
 ### Fit a model
 Use the 'Type of fit' switch to select a polynomial or spline fit. To fit a polynomial to your data, select the degree of the polynomial curve p(x) or surface p(x,y) using the 'degree-x' and 'degree-y' spinners. The method of least squares (linear or nonlinear) is used used for fitting. The spline option uses spline interpolation to fit a curve or surface to your data. If you have selected one variable, a smoothing spline model will be fit to your data with the option to adjust the smoothness of the fit using the 'smoothing' numeric field (a value between 0 and 1). If you have selecte two variables then thin-plate spline interpolation will be used and the option for adjusting the smoothness will be greyed out. Click the 'fit model' button to fit the model. The model will be plotted automatically together with your data.The goodness of fit statistics will be displayed in the 'GoF'pane. 
 
-Data 
+### Adjust the plot
+Use the 'x-range', 'y-range' and 'z-range' numeric fields to visualise or extrapolate your model across a different range of values on a particular axis. The format required is min:max, e.g. to plot from 0 to 10 you would enter 0:10. Then hit Return on your keyboard or click your mouse outside of the numeric field. Note that this is for visualisation purposes only and does not affect model fit.
 
-### Plot a model
-Click the 'Run' button to display your user-defined or fitted model in the 'Data / Predictions' plot pane. Use the 'x-range' numeric field below the plot pane to visualise or extrapolate your model across a different range of values on the x-axis. The format required is min:step:max, e.g. to plot from 0 to 10 in steps of 0.1 you would enter 0:0.1:10. Then hit Return on your keyboard or click your mouse outside of the numeric field. Note that this is for visualisation purposes only and does not affect model fit.
-
-### Final model selection
-To use a model for projections you must select 'Use this model' with the switch in the bottom right corner of the tab, changing the lamp from red to green. You can now proceed to the Projections Tab.
-
-# Projections Tab
+# Climate Tab
 <p align="left">
   <img src="https://github.com/pskelsey/4C-model/blob/gh-pages/projectionsTabLarge.png">
 </p>
 
-## Emissions panel
-Select your climate variable, future time-period, and CO2 emissions scenario using the knobs. Select the month of the year or the season using the list box. For seasonal averages of the selected climate variable, Spr = spring (MAM), Sum = summmer (JJA), Aut = autumn (SON), and Win = winter (DJF). The climate change data are probabilistic, therefore a range of climate values will be provided for each grid cell (see [Climate data](#climate-data)).
-
-## Landscapes panel
-Here you define the distribution of locations (grid cells) that you want to use in your risk assessment. 
-
-### How to incorporate cell areas
-The 'Areas' radio buttons (No / Yes) are used to determine whether or not you want the area crop / land use type within each 25 km grid cell to be incoporated into risk model projections. 'No' = projections are made for every grid cell containing the crop / land use of interest. 'Yes' = projected values incorporate the area of crop / land use within each grid cell, and if required, also a cell density parameter that is set using the numeric field below the 'Yes' radio button: projected value = risk model value x area x density. The following examples demonstrate how these radio buttons and the density numeric field can be combined for a wide variety of different outcomes:
-1. Your risk model describes the impact of a climate variable on any response variable (e.g. disease severity per observational unit,  crop growth rate, etc.). To project future values of the response variable in grid cells containing any amount of the land use type of interest, select 'No': projected value = risk model value.
-2. Your risk model describes the impact of climate on the density of a variable per square meter of crop cover (e.g. pests per square meter of crop cover). To project the total number in each grid cell, select 'Yes' and leave the density field equal to 1 (i.e. square meters of crop per square meter of crop): projected number per cell (pests) = risk model value (pests m<sup>-2</sup>) x area of crop per cell (m<sup>2</sup>) x 1 (m<sup>2</sup> m<sup>-2</sup>).
-3. Your risk model describes the impact of climate on the density of a variable per square meter of crop canopy (e.g. lesions per square meter of foliage). To project the total number in each grid cell, select 'Yes' and set the density field equal to the ratio of canopy area to ground area (i.e. the leaf area index, LAI): projected number per cell (lesions) = risk model value (lesions m<sup>-2</sup>) x area of crop per cell (m<sup>2</sup>) x LAI (m<sup>2</sup> m<sup>-2</sup>).
-4. Your risk model describes the impact of climate on the density of a variable per observational unit (e.g. spores per lesion). To project the total number of spores in each grid cell, select 'Yes' and set the density field equal to the ratio of the observational unit to crop area (e.g. lesions per square meter of crop cover): projected number per cell (spores) = risk model value (spores lesion<sup>-1</sup>) x area of crop per cell (m<sup>2</sup>) x density of lesions (lesions m<sup>-2</sup>).
-5. Your risk model describes the impact of climate on the per capita growth rate of a population of organisms. To obtain the future population size within the habitat / host contained in each grid cell, select 'Yes' and set the density field equal to the initial number of organisms per square meter of crop: projected number per cell (individuals) = risk model value (-) x area of crop per cell (m<sup>2</sup> crop) x initial density (individuals m<sup>-2</sup>). Note that the growth rate in your risk model should be a monthly or seasonal per capita growth rate to match the temporal resolution of the climate change data (see [Climate data](#climate-data)). 
-
-The density parameter can be used in many other ways; just make sure you do a dimensional analysis, as above, so that the units on the left hand side of the equality operator match the units on the right hand side.
-
-### Select a distribution of locations
-Select a region of the Scotland or England using the 'Region' knob. Sco_N, Sco_E, Sco_W = Northern, Eastern and Western Scotland, respectively. Eng_N, Eng_M, Eng_SE, Eng_SW = North, Midlands, South East, and South West England, respectively. Once a region is selected, choose a spatial distribution of crop / land use locations using the  'Crop / land use' list box: P = potato, SB = spring barley, WB = winter barley, SO = spring oats, WO = winter oats, SW = spring wheat, WW = winter wheat, F = forestry, W = water bodies (ponds, lakes, rivers).
-
-### Artifical landscape generation
-The 4C model also allows you to generate your own distribution of locations. This is useful if the crop distribution desired is not available, and for adaptation scenarios involving a change in the amount and spatial distribution of crop locations. Artifical landscapes are generated using fractal geometry (the ‘inverse Fourier transform' method) to create binary landscape patterns of occupied / unoccupied cells (e.g. habitat / non-habitat). Select 'Artificial' using the switch. Set 'Seed' using the numeric field - this controls the random generation of patterns, allowing you to replicate a pattern by using the same value for seed. The 'f' numeric field (0,1) sets the fraction of GB land area that will be occupied. The 'H' numeric field (0,1) controls the degree of aggregation of occupied cells via a parameter known as the Hurst exponent. The 'r' numeric field (0.01,1) controls the texture of the pattern, or the size distribution of gaps among occupied cells, via a parameter known as the lacunarity.
+## Climate and crop panel
+Select your climate variables (Temp = temperature, RH = relative humidity), future time-period, season (Spr = spring (MAM), Sum = summmer (JJA), Aut = autumn (SON), and Win = winter (DJF)), and region of the country using the knobs. Select the crop species of interest using the drop down list (OSR = oilseed rape). The climate change data are probabilistic, therefore a range of climate values will be provided for each grid cell containing the selected crop in the specified region of interest (see [Climate data](#climate-data)).
 
 ## Dispersal panel
 The features in this panel are used to define spatial relationships among grid cells, i.e. physical dispersal among cells, or degree of connectivity among cells (on a scale of 0 to 1). These spatial relationshps are used to modify the projected values from your risk model. For those who are interested, spatial phenomena are solved by performing a spatial convolution between the distribution of risk model values in the selected cells and a 2D radially-symmetric probability density function (dispersal kernel), implemented via fast Fourier transforms (see [Skelsey et al. 2013](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0075892)). 
