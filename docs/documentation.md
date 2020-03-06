@@ -56,9 +56,10 @@ The risk models you create here can be a function of one- or two-weather variabl
   <img src="https://github.com/pskelsey/4C-model-lite/blob/gh-pages/riskModelScreenshot.PNG">
 </p>
 
-### Create your risk model
+### Upload your data
 Use the 'No. of variables' switch to select a model that is a function of one- or two-weather variables. Certain options will become greyed out and unavailable depending on what you select here. Click the 'load data' button to upload your data. This will open up a file selection dialog box. Your datafile must be an ASCII delimited text file or CSV file with the data stored in columns. If your data have one weather variable, this should be stored in the first column and your 'response' or dependent variable in the second. If your data have two weather variables, these should be stored in the first two columns and your response variable in the third. Replicates should be placed in rows. If your file does not meet these requirements then a warning will occur. Two example datasets ('exampleData1Var.txt & exampleData2Var.txt') have been provided to help you get you up and running. Your data will be plotted automatically once it has loaded successfully, and the axis limits of the plot pane will adjust according to the lower and upper values in your data. You can change
 
+### Fit a model
 Use the 'Type of fit' switch to select a polynomial or spline fit. To fit a polynomial to your data, select the degree of the polynomial curve p(x) or surface p(x,y) using the 'degree-x' and 'degree-y' spinners. The method of least squares (linear or nonlinear) is used used for fitting. The spline option uses spline interpolation to fit a curve or surface to your data. If you have selected one variable, a smoothing spline model will be fit to your data with the option to adjust the smoothness of the fit using the 'smoothing' numeric field (a value between 0 and 1). If you have selecte two variables then thin-plate spline interpolation will be used and the option for adjusting the smoothness will be greyed out. Click the 'fit model' button to fit the model. The model will be plotted automatically together with your data.The goodness of fit statistics will be displayed in the 'GoF'pane. 
 
 Data 
