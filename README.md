@@ -13,9 +13,8 @@ A desktop app for performing climate change risk assessments in real crop locati
 ## Example
 A surface polynomial risk function is selected and fit to data uploaded by the user for the proportion of plants infected as a function of temperature and relative humidity. The results of the fit are saved to the user's specified directory.
 
-<p align="left">
-  <img src="https://github.com/pskelsey/4C-model-lite/blob/gh-pages/riskModelScreenshot.PNG">
-</p>
+![riskModelScreenshot](https://user-images.githubusercontent.com/32124230/109953567-232f1380-7cd8-11eb-98c8-cecb3c98251c.PNG)
+
 Now that the model has been fitted, the risk assessment can proceed in the Climate Tab. Temperature and humidity are selected as the variables of interest, for summer in the 2060s, and barley crops are selected from the list of available crop species. That selection is narrowed further to locations in the north of Scotland (map shown). In order to adjust projected values from the model according to the connectivity of the crops (e.g. for pest/pathogen dispersal), dispersal is switched on and the mean dispersal distance is set to 1 grid cell (12 km). The three boxplots show the distribution of projected model values for the three types of dispersal kernel. Results are presented as the percentage increase in risk compared to the current (baseline) climate. 
 <p>
 </p>
