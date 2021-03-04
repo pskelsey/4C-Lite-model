@@ -4,7 +4,7 @@
 
 ## Basic overview
 A desktop app for performing climate change risk assessments in real crop locations in Great Britain. 
-* Upload your own data and fit a polynomial surface model of two climate variables in the form of z = f(x,y).
+* Upload your own data and fit a surface model of two climate variables in the form of z = f(x,y).
 * Choose a raster distribution of crops to apply your model in.
 * Select a greenhouse gas emissions scenario.
 * Define the level of connectivity among grid cell locations, if desired.
