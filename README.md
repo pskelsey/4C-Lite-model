@@ -16,11 +16,8 @@ A surface polynomial risk function is selected and fit to data uploaded by the u
 ![riskModelScreenshot](https://user-images.githubusercontent.com/32124230/109953567-232f1380-7cd8-11eb-98c8-cecb3c98251c.PNG)
 
 Now that the model has been fitted, the risk assessment can proceed in the Climate Tab. Temperature and humidity are selected as the variables of interest, for summer in the 2060s, and barley crops are selected from the list of available crop species. That selection is narrowed further to locations in the north of Scotland (map shown). In order to adjust projected values from the model according to the connectivity of the crops (e.g. for pest/pathogen dispersal), dispersal is switched on and the mean dispersal distance is set to 1 grid cell (12 km). The three boxplots show the distribution of projected model values for the three types of dispersal kernel. Results are presented as the percentage increase in risk compared to the current (baseline) climate. 
-<p>
-</p>
-<p align="left">
-  <img src="https://github.com/pskelsey/4C-model-lite/blob/gh-pages/projectionsScreenshot.PNG">
-</p>
+
+![projectionsScreenshot](https://user-images.githubusercontent.com/32124230/109953667-478af000-7cd8-11eb-9205-c42029c4a732.PNG)
 
 ## Motivation
 This app was developed as a tool to help non-modellers perform state-of-the-art climate change risk assessments. At your fingertips are real crop / land-use data from [IACS](https://ec.europa.eu/info/food-farming-fisheries/key-policies/common-agricultural-policy/financing-cap/controls-and-transparency/managing-payments_en) and [JACS](https://www2.gov.scot/Topics/Statistics/Browse/Agriculture-Fisheries/PubFinalResultsJuneCensus), and the latest [UKCP18](http://ukclimateprojections.metoffice.gov.uk/21678) probabilistic climate change data. This model is a 'light' version of the previous [4C model](https://github.com/pskelsey/4C-model) that makesthe whole process of performing a climate change risk assessment even easier; creating a risk model and defining your future scenarios is just a matter of hitting a few switches and twiddling a few knobs. I've used this framework to produce [peer-reviewed journal articles](#references), and you can too. 
