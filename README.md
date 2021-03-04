@@ -1,4 +1,4 @@
-![logo_new](https://user-images.githubusercontent.com/32124230/109953299-c6cbf400-7cd7-11eb-8055-b917fe7b485e.png)
+![logo_new](https://user-images.githubusercontent.com/32124230/109953405-ec58fd80-7cd7-11eb-8fd3-c57a90f1e92d.png)
    
 # _4C-Lite model_: Crop Connectivity under Climate Change
 
