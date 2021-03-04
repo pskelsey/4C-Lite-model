@@ -1,6 +1,4 @@
-<p align="left">
-<img width="212" height="166"  src="https://github.com/pskelsey/4C-model-lite/blob/gh-pages/4CLogo.png">
-</p>
+![logo_new](https://user-images.githubusercontent.com/32124230/109953299-c6cbf400-7cd7-11eb-8055-b917fe7b485e.png)
    
 # _4C-Lite model_: Crop Connectivity under Climate Change
 
