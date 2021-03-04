@@ -25,9 +25,7 @@ This app was developed as a tool to help non-modellers perform state-of-the-art 
 ### Installation and loading
 To download the app for the first time, use the green "Clone or download" button to obtain a ZIP file:
 
-<p align="left">
-  <img src="https://github.com/pskelsey/4C-Lite-model/blob/gh-pages/donwloadScreenshot.png">
-</p>
+![downloadScreenshot](https://user-images.githubusercontent.com/32124230/109953793-6ab59f80-7cd8-11eb-8074-cf7f35f703d7.PNG)
 
 Then unzip the contents. There are two executable files you can run to install this app - which one you choose depends on whether or not you have MATLAB installed on your computer. This is because the app was made in MATLAB and requires 'MATLAB Runtime' to work. MATLAB Runtime is a completely free, standalone set of shared libraries that enables the execution of MATLAB applications on computers that do not have MATLAB installed. This all happens 'behind the scenes' and once it is installed then MATLAB apps will run like any other piece of software, using the desktop shortcuts etc. provided. And then you can download and use as many of the thousands of available MATLAB apps as you like, free of charge. So, if you do not have MATLAB or an up-to-date version of Runtime installed (see [prerequisites](https://github.com/pskelsey/4C-Lite-model/blob/master/prerequisites.txt)) installed, then run 'MyAppInstaller_web.exe' to install the app. This is a web-based installer that will download MATLAB Runtime to your computer and install the app, so you will need an internet connection. MATLAB Runtime requires approximately 750MB of disk space so it may take some time to install. If you already have MATLAB or an up-to-date version of Runtime, then run 'cropConnectivityUnderClimateChange_Lite.exe' to install the app. If you already have this app and want to check for a new release, click on the 'release' button near the top of the page.
 
